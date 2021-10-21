@@ -1,0 +1,193 @@
+
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<!--for google fonts start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+     <!--for google fonts end-->
+
+    <title>Hello, world!</title>
+    <style>
+    body{
+      margin-left:100px;
+    }
+    </style>
+  </head>
+  <body>
+    <form action = "" method = "get">
+  
+<h1>Certification Detail</h1>
+
+	<label for="name">Name: </label>
+	<input id="name" type="text" name="name"><br>
+
+  <label for="email">Email: </label>
+	<input id="email" type="text" name="email"><br>
+
+  <label for="contact">Contact: </label>
+	<input id="contact" type="number" name="contact"><br>
+
+  <label for="summary">Profession Summary: </label>
+	<input id="summary" type="textares" name="summary"><br>
+
+  <label for="address">Address : </label>
+	<input id="address" type="textares" name="address"><br>
+
+<h1>Employment detail</h1>
+
+  <label for="employment1">Companey Name 1: </label>
+	<input id="employment1" type="text" name="employment1"><br>
+  <label for="date1">Date: </label>
+	<input id="date1" type="text" name="date1"><br>
+  <label for="desc1">Desc: </label>
+	<input id="desc1" type="text" name="desc1"><br>
+  <label for="place1">Company Location: </label>
+	<input id="place1" type="text" name="place1"><br><hr>
+
+  <label for="employment2">Companey Name 2: </label>
+	<input id="employment2" type="text" name="employment2"><br>
+  <label for="date2">Date: </label>
+	<input id="date2" type="text" name="date2"><br>
+  <label for="desc2">Desc: </label>
+	<input id="desc2" type="text" name="desc2"><br>
+  <label for="place2">From where: </label>
+	<input id="place2" type="text" name="place2"><br><hr>
+
+  {% comment %} <label for="employment3">Companey Name 3: </label>
+	<input id="employment3" type="text" name="employment3"><br>
+  <label for="date3">Date: </label>
+	<input id="date3" type="text" name="date3"><br>
+  <label for="desc3">Desc: </label>
+	<input id="desc3" type="text" name="desc3"><br>
+  <label for="place3">From where: </label>
+	<input id="place3" type="text" name="place3"><br><hr> {% endcomment %}
+<h1>Skills Details</h1>
+<label for="skill1">Skill 1: </label>
+	<input id="skill1" type="text" name="skill1"><br>
+  <label for="skill2">Skill 2: </label>
+	<input id="skill2" type="text" name="skill2"><br>
+<label for="skill3">Skill 3: </label>
+	<input id="skill3" type="text" name="skill3"><br>
+  <label for="skill4">Skill 4: </label>
+	<input id="skill4" type="text" name="skill4"><br>
+  <label for="skill5">Skill 5: </label>
+	<input id="skill5" type="text" name="skill5"><br>
+  <label for="skill6">Skill 6: </label>
+	<input id="skill6" type="text" name="skill6"><br>
+
+<h1>Links Details</h1>
+<label for="link1">Link 1: </label>
+	<input id="link1" type="text" name="link1"><br>
+  <label for="link2">Link 2: </label>
+	<input id="link2" type="text" name="link2"><br>
+  <label for="link3">Link 3: </label>
+	<input id="link3" type="text" name="link3"><br>
+  <label for="link4">Link 4: </label>
+	<input id="link4" type="text" name="link4"><br>
+  <label for="link5">Link 5: </label>
+	<input id="link5" type="text" name="link5"><br>
+  <label for="link6">Link 6: </label>
+	<input id="link6" type="text" name="link6"><br>
+
+<h1>Education detail</h1>
+  <label for="education1">Institute Name 1: </label>
+	<input id="education1" type="text" name="education1"><br>
+  <label for="edate1">Date: </label>
+	<input id="edate1" type="text" name="edate1"><br>
+  <label for="edesc1">Course Name: </label>
+	<input id="edesc1" type="text" name="edesc1"><br>
+  <label for="eplace1">From where: </label>
+	<input id="eplace1" type="text" name="eplace1"><br><hr>
+
+  <label for="education2">Institute Name 2: </label>
+	<input id="education2" type="text" name="education2"><br>
+  <label for="edate2">Date: </label>
+	<input id="edate2" type="text" name="edate2"><br>
+  <label for="edesc2">Desc: </label>
+	<input id="edesc2" type="text" name="edesc2"><br>
+  <label for="eplace2">From where: </label>
+	<input id="eplace2" type="text" name="eplace2"><br><hr>
+
+  <label for="education3">Institute Name 3: </label>
+	<input id="education3" type="text" name="education3"><br>
+  <label for="edate3">Date: </label>
+	<input id="edate3" type="text" name="edate3"><br>
+  <label for="edesc3">Desc: </label>
+	<input id="edesc3" type="text" name="edesc3"><br>
+  <label for="eplace3">From where: </label>
+	<input id="eplace3" type="text" name="eplace3"><br><hr><hr>
+
+<h1>Project Detail</h1>
+
+  <label for="prodject1">Project Name 1: </label>
+	<input id="prodject1" type="text" name="prodject1"><br>
+  <label for="pdate1">Date: </label>
+	<input id="pdate1" type="text" name="pdate1"><br>
+  <label for="pdesc1">Project Desc: </label>
+	<input id="pdesc1" type="text" name="pdesc1"><br>
+  <label for="pplace1">Location: </label>
+	<input id="pplace1" type="text" name="pplace1"><br>
+
+   <label for="prodject2">Project Name 1: </label>
+	<input id="prodject2" type="text" name="prodject2"><br>
+  <label for="pdate2">Date: </label>
+	<input id="pdate2" type="text" name="pdate2"><br>
+  <label for="pdesc2">Project Desc: </label>
+	<input id="pdesc2" type="text" name="pdesc2"><br>
+  <label for="pplace2">Location: </label>
+	<input id="pplace2" type="text" name="pplace2"><br>
+ <hr>
+
+ 
+<h1>Certification Detail</h1>
+
+  <label for="cert1">Certificate Name 1: </label>
+	<input id="cert1" type="text" name="cert1"><br>
+  <label for="cdate1">Date: </label>
+	<input id="cdate1" type="text" name="cdate1"><br>
+  <label for="cdesc1">Certification Desc: </label>
+	<input id="cdesc1" type="text" name="cdesc1"><br>
+  <label for="cplace1">Location: </label>
+	<input id="cplace1" type="text" name="cplace1"><br>
+
+    <label for="cert2">Certificate Name 2: </label>
+	<input id="cert2" type="text" name="cert2"><br>
+  <label for="cdate2">Date: </label>
+	<input id="cdate2" type="text" name="cdate2"><br>
+  <label for="cdesc2">Certification Desc: </label>
+	<input id="cdesc2" type="text" name="cdesc2"><br>
+  <label for="cplace2">Location: </label>
+	<input id="cplace2" type="text" name="cplace2"><br>
+ <hr>
+ 
+
+	<input type="submit" value="OK">
+</form>
+
+<h1>PDFS</h1>
+<a href="pdf/">pdf</a><br>
+<a href="pdf2/">pdf</a><br>
+
+{% comment %} <a href="{% url 'pdf2/' %}">pdf2</a><br> {% endcomment %}
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

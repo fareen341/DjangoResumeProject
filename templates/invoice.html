@@ -1,0 +1,200 @@
+{% comment %} ```
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>Title</title>
+        <style type="text/css">
+            body {
+                font-weight: 200;
+                font-size: 14px;
+            }
+            .header {
+                font-size: 20px;
+                font-weight: 100;
+                text-align: center;
+                color: #007cae;
+            }
+            .title {
+                font-size: 22px;
+                font-weight: 100;
+               /* text-align: right;*/
+               padding: 10px 20px 0px 20px;  
+            }
+            .title span {
+                color: #007cae;
+            }
+            .details {
+                padding: 10px 20px 0px 20px;
+                text-align: left !important;
+                /*margin-left: 40%;*/
+            }
+            .hrItem {
+                border: none;
+                height: 1px;
+                /* Set the hr color */
+                color: #333; /* old IE */
+                background-color: #fff; /* Modern Browsers */
+            }
+        </style>
+    </head>
+    <body>
+        <div class='wrapper'>
+            <div class='header'>
+                <p class='title'>Invoice # </p>
+            </div>
+        <div>
+        <div class='details'>
+            Bill to: <br/>
+            Amount:  <br/>
+            Date: 
+            <hr class='hrItem' />
+        </div>
+    </div>
+    </body>
+</html>
+``` {% endcomment %}
+
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!--for google fonts start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+     <!--for google fonts end-->
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+      
+        <style type="text/css">
+        @font-face {
+            font-family: "THSarabunNew";
+            src: url("/home/pinsz/THSarabunNew.ttf");
+            }
+            body {
+                font-weight: 200;
+                font-size: 14px;
+                font-family: "THSarabunNew";
+                margin-left:40px;
+                margin-right:40px;
+            }
+            .header {
+                font-size: 20px;
+                font-weight: 100;
+                text-align: center;
+                color: #007cae;
+            }
+            .title {
+                font-size: 22px;
+                font-weight: 100;
+               /* text-align: right;*/
+               padding: 10px 20px 0px 20px;  
+            }
+            .title span {
+                color: #007cae;
+            }
+            .details {
+                padding: 10px 20px 0px 20px;
+                text-align: left !important;
+                /*margin-left: 40%;*/
+            }
+            .hrItem {
+                border: none;
+                height: 1px;
+                /* Set the hr color */
+                color: #333; /* old IE */
+                background-color: #fff; /* Modern Browsers */
+            }
+            .newstyle{
+              margin-left:200px;
+            }
+            .myheading{
+              font-size:15px;
+              margin-top:5px; 
+              background-color:skyblue; 
+              width:100px; 
+              color:white; 
+              padding-top:15px; 
+              padding-left:10px;
+            }
+        </style>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <p style="text-align:center">
+    <span style="color: #007cae; font-size:30px; margin-left:200px;">{{name}}</span><br>
+    <span>{{address}}</span><br>{{email}}<br><br></p>
+    <p class="myheading">PROFESSIONAL SUMMARY</p>
+        <span>{{summary}}</span><br><br>
+    <p class="myheading">EMPLOYMENT HISTORY</p>      
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>&#8594;&nbsp;&nbsp;{{employment1}}<br>{{desc1}}<br><small style="color:#007cae;">{{date1}} | {{place1}}</small></td>
+            {% comment %} <td>&#8594;&nbsp;&nbsp;ITVEDANT EDUCATION PVT. LTD<br> Data Science<br><small style="color:#007cae;">Nov 2020 | Thane Maharashtra</small></td> {% endcomment %}
+            <td>&#8594;&nbsp;&nbsp;{{employment2}}<br>{{desc2}}<br><small style="color:#007cae;">{{date2}} | {{place2}}</small></td>
+
+          </tr>
+        </tbody>
+      </table>
+<br>
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>&#8594;&nbsp;&nbsp;{{employment3}}<br>{{desc3}}<br><small style="color:#007cae;">{{date3}} | {{place3}}</small></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="myheading">EDUCATION</p>      
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>&#8594;&nbsp;&nbsp;{{education1}}<br> {{edesc1}}<br><small style="color:#007cae;">{{edate1}} | {{eplace1}}</small></td>
+            <td>&#8594;&nbsp;&nbsp;{{education2}}<br> {{edesc2}}<br><small style="color:#007cae;">{{edate2}} | {{eplace2}}</small></td>
+          </tr>
+        </tbody>
+      </table><br>
+
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>&#8594;&nbsp;&nbsp;{{education3}}<br> {{edesc3}}<br><small style="color:#007cae;">{{edate3}} | {{eplace3}}</small></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="myheading">PROJECT</p>      
+       <table class="table">
+          <tbody>
+            <tr>
+            <td>&#8594;&nbsp;&nbsp;{{prodject1}}<br> {{pdesc1}}<br><small style="color:#007cae;">{{pdate1}} | {{pplace1}}</small></td>
+            <td>&#8594;&nbsp;&nbsp;{{prodject2}}<br> {{pdesc2}}<br><small style="color:#007cae;">{{pdate2}} | {{pplace2}}</small></td>
+          </tr>
+        </tbody>
+      </table>
+
+      
+
+    <p class="myheading">CERTIFICATION</p>      
+       <table class="table">
+          <tbody>
+            <tr>
+            <td>&#8594;&nbsp;&nbsp;{{cert1}}<br> {{cdesc1}}<br><small style="color:#007cae;">{{cdate1}} | {{cplace1}}</small></td>
+            <td>&#8594;&nbsp;&nbsp;{{cert2}}<br> {{cdesc2}}<br><small style="color:#007cae;">{{cdate2}} | {{cplace2}}</small></td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  </body>
+</html>

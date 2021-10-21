@@ -1,0 +1,225 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!--for google fonts start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+     <!--for google fonts end-->
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+      
+        <style type="text/css">
+        
+            body {
+                font-weight: 200;
+                font-size: 14px;
+                font-family: 'Raleway', sans-serif;
+                margin-left:40px;
+                margin-right:40px;
+            }
+            .header {
+                font-size: 20px;
+                font-weight: 100;
+                text-align: center;
+                color: #007cae;
+            }
+            .title {
+                font-size: 22px;
+                font-weight: 100;
+               /* text-align: right;*/
+               padding: 10px 20px 0px 20px;  
+            }
+            .title span {
+                color: #007cae;
+            }
+            .details {
+                padding: 10px 20px 0px 20px;
+                text-align: left !important;
+                /*margin-left: 40%;*/
+            }
+            .hrItem {
+                border: none;
+                height: 1px;
+                /* Set the hr color */
+                color: #333; /* old IE */
+                background-color: #fff; /* Modern Browsers */
+            }
+        </style>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+   <p style="text-align:center"> <span style="color: black; font-size:35px;">{{name}}</span>
+    <br><span style="color:#595959;">{{address}}</span><br>
+    <span style="color:#595959;">{{email}} | {{conact}}</span></p><br>
+    <p style="font-size:20px; color:#a6a6a6;">PROFESSIONAL SUMMARY</p>
+    
+    <span>{{summary}}</span><br><br>
+    
+    <table class="table">
+          <tbody>
+            <tr>
+              <td>
+              <p style="font-size:20px; color:#a6a6a6;">EDUCATION</p>
+              <span style="font-size: 15px; font-weight: bold;">{{education1}}</span><br> <span style="font-size: 15px;">{{edesc1}}</span><br><span style="font-size: 15px; color:#a6a6a6;">{{edate1}} | {{eplace1}}</span><br>
+              {% comment %} <span style="color:#007cae;">Aug, 2012</span><br> {% endcomment %}
+              <span style="font-size: 15px; font-weight: bold;">{{education2}}</span><br> <span style="font-size: 15px;">{{edesc2}}</span><br><span style="font-size: 15px; color:#a6a6a6;">{{edate2}} | {{eplace2}}</span><br>
+              <span style="font-size: 15px; font-weight: bold;">{{education3}}</span><br> <span style="font-size: 15px;">{{edesc3}}</span><br><span style="font-size: 15px; color:#a6a6a6;">{{edate3}} | {{eplace3}}</span><br>
+              </td>
+            <td>
+            <p style="font-size:20px; color:#a6a6a6;">SKILLS</p> 
+            <span style="font-size: 15px; font-weight: bold;">TECHNICAL SKILLS</span><br>
+            <span>{{skill1}}</span><br>
+            <span>{{skill2}}</span><br>
+            <span>{{skill3}}</span><br>
+            <span>{{skill4}}</span><br>
+            <span>{{skill5}}</span><br>
+            <span>{{skill6}}</span><br>
+           
+            <br>
+            <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <table class="table">
+          <tbody>
+            <tr>
+              <td>
+              <p style="font-size:20px; color:#a6a6a6;">CERTIFICATES</p>
+              <span style="font-size: 15px; font-weight: bold;">{{cert1}}</span><br> <span style="font-size: 15px;">{{cdesc1}}</span><br><span style="font-size: 15px; color:#a6a6a6;">{{cdate1}} | {{cplace1}}</span><br>
+              <span style="font-size: 15px; font-weight: bold;">{{cert1}}</span><br> <span style="font-size: 15px;">{{cdesc2}}</span><br><span style="font-size: 15px; color:#a6a6a6;">{{cdate2}} | {{cplace2}}</span><br>
+              </td>
+            <td>
+            <p style="font-size:20px; color:#a6a6a6;">PROJECTS</p> 
+              <span style="font-size: 15px; font-weight: bold;">{{prodject1}}</span><br> <span style="font-size: 15px;">{{pdesc1}}</span><br><span style="font-size: 15px; color:#a6a6a6;">{{pdate1}} | {{pplace1}}</span><br>
+              <span style="font-size: 15px; font-weight: bold;">{{prodject2}}</span><br> <span style="font-size: 15px;">{{pdesc2}}</span><br><span style="font-size: 15px; color:#a6a6a6;">{{pdate2}} | {{pplace2}}</span><br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <table class="table">
+          <tbody>
+            <tr>
+              <td>
+              <p style="font-size:20px; color:#a6a6a6;">EXPERIENCE</p>
+              <span style="font-size: 15px; font-weight: bold;">EXPERIENCE XYZ</span><br> <span style="font-size: 15px;">Developed a web application in Visual studio and Ms-Sql server.</span><br><span style="font-size: 15px; color:#a6a6a6;">Sep | Mumbai</span><br>
+              <span style="font-size: 15px; font-weight: bold;">EXPERIENCE XYZ</span><br> <span style="font-size: 15px;">Developed a web application in Visual studio and Ms-Sql server.</span><br><span style="font-size: 15px; color:#a6a6a6;">Sep | Mumbai</span><br>
+              </td>
+            <td>
+            <p style="font-size:20px; color:#a6a6a6;">LINKS</p> 
+            <span>Linked In:</span> <span style="color:#a6a6a6"> example.linked.in</span><br>
+            <span>Github:</span> <span style="color:#a6a6a6"> github.com</span><br>
+            <span>Project xyz:</span> <span style="color:#a6a6a6"> project.in</span><br>
+            <span>Project xyz:</span> <span style="color:#a6a6a6"> project.in</span><br>
+            <span>Project xyz:</span> <span style="color:#a6a6a6"> project.in</span><br>
+            <br>
+            <br>
+            <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      {% comment %} <table class="table">
+          <tbody>
+            <tr>
+              <td>
+              IT Project Management<br> 
+              <span style="color:#007cae;">Aug, 2012</span>
+              </td>
+              <td>
+              Javascript
+              </td>
+          </tr>
+        </tbody> 
+      </table>{% endcomment %}
+    {% comment %} <span style="font-size:15px;  margin-top:10px;">EMPLOYMENT HISTORY</span>
+    <p>
+    {{date1}}<br> 
+    <span style="text-align: right;">{{place1}}</span><br>
+    {{employment1}}
+    <span style="text-decoration:underline; border-left:1px solid;">hello</span><br>
+    {{desc1}}<br>
+    </p> 
+    <p>{{employment2}}<br> {{date2}}<br> {{desc2}}<br>{{place2}}</p>
+    <p>{{employment3}}<br> {{date3}}<br> {{desc3}}<br>{{place3}}</p>
+
+    <span style="font-size:15px;  margin-top:10px;">EDUCATION</span><hr>
+    <p>{{education1}}<br>{{edate1}}<br>{{edesc1}}<br>{{eplace1}}</p>
+    <p>{{education2}}<br>{{edate2}}<br>{{edesc2}}<br>{{eplace2}}</p>
+    <p>{{education2}}<br>{{edate3}}<br>{{edesc3}}<br>{{eplace3}}</p>
+    {% comment %} <span style="font-size:15px;  margin-top:10px;">HONORS</span><hr>
+    <p>{{honor}}</p> {% endcomment %}
+
+    {% comment %} <p>{{desc}}</p> 
+   
+    <table class="table-dark">
+  <thead>
+    <tr>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+     <tr>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul class="list-group">
+  <li class="list-group-item">An item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+  <li class="list-group-item">A fourth item</li>
+  <li class="list-group-item">And a fifth one</li>
+</ul>
+
+<p>&#8594;</p>
+<p>&#128512;</p>
+<a HREF="https://www.w3schools.com/html/" style="text-decoration: none; color:green;">Visit our HTML tutorial</a>
+
+<img src="{% static 'img/a5.jpg' %}">
+
+
+{% endcomment %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  </body>
+</html>

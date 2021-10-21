@@ -1,0 +1,151 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!--for google fonts start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+     <!--for google fonts end-->
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+      
+        <style type="text/css">
+        @font-face {
+            font-family: "THSarabunNew";
+            src: url("/home/pinsz/THSarabunNew.ttf");
+            }
+            body {
+                font-weight: 200;
+                font-size: 14px;
+                font-family: "THSarabunNew";
+                margin-left:40px;
+                margin-right:40px;
+            }
+            .header {
+                font-size: 20px;
+                font-weight: 100;
+                text-align: center;
+                color: #007cae;
+            }
+            .title {
+                font-size: 22px;
+                font-weight: 100;
+               /* text-align: right;*/
+               padding: 10px 20px 0px 20px;  
+            }
+            .title span {
+                color: #007cae;
+            }
+            .details {
+                padding: 10px 20px 0px 20px;
+                text-align: left !important;
+                /*margin-left: 40%;*/
+            }
+            .hrItem {
+                border: none;
+                height: 1px;
+                /* Set the hr color */
+                color: #333; /* old IE */
+                background-color: #fff; /* Modern Browsers */
+            }
+            .newstyle{
+              margin-left:200px;
+            }
+        </style>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <span style="color: #007cae; font-size:30px;">{{name}}</span><br>
+    <span>{{address}}</span><br><br>
+    <span style="font-size:15px;  margin-top:10px; background-color:skyblue;">PROFESSIONAL SUMMARY</span><br>
+    
+    <span>{{summary}}</span><br><br>
+    <span style="font-size:15px;  margin-top:10px;">EMPLOYMENT HISTORY</span>
+    <p>
+    {{date1}}<br> 
+    <span style="text-align: right;">{{place1}}</span><br>
+    {{employment1}}
+    <span style="text-decoration:underline; border-left:1px solid;">hello</span><br>
+    {{desc1}}<br>
+    </p>
+    <p>{{employment2}}<br> {{date2}}<br> {{desc2}}<br>{{place2}}</p>
+    <p>{{employment3}}<br> {{date3}}<br> {{desc3}}<br>{{place3}}</p>
+
+    <span style="font-size:15px;  margin-top:10px;">EDUCATION</span><hr>
+    <p>{{education1}}<br>{{edate1}}<br>{{edesc1}}<br>{{eplace1}}</p>
+    <p>{{education2}}<br>{{edate2}}<br>{{edesc2}}<br>{{eplace2}}</p>
+    <p>{{education2}}<br>{{edate3}}<br>{{edesc3}}<br>{{eplace3}}</p>
+    {% comment %} <span style="font-size:15px;  margin-top:10px;">HONORS</span><hr>
+    <p>{{honor}}</p> {% endcomment %}
+
+    {% comment %} <p>{{desc}}</p> {% endcomment %}
+    <br><br><br><br><br><br>
+      <span style="font-size:20px;  margin-top:10px; "><i>EDUCATION</i></span>
+ <table class="table">
+  <tbody>
+    <tr>
+      <td>{{edate1}}</td>
+      <td>{{education1}}</td>  
+      <td></td> 
+    </tr>
+    <tr>
+      <td>{{eplace1}}</td>
+      <td>{{edesc3}}</td>
+      <td></td> 
+    </tr>
+  </tbody>
+</table>
+<br>
+
+ <table class="table">
+  <tbody>
+    <tr>
+      <td>{{edate1}}<br> {{eplace1}}</td>
+      <td>{{education1}}<br> {{edesc3}}</td>
+        
+    </tr>
+
+  </tbody>
+</table>
+
+<ul class="list-group">
+  <li class="list-group-item">An item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+  <li class="list-group-item">A fourth item</li>
+  <li class="list-group-item">And a fifth one</li>
+</ul>
+
+<p>&#8594;</p>
+<p>&#128512;</p>
+<a HREF="https://www.w3schools.com/html/" style="text-decoration: none; color:green;">Visit our HTML tutorial</a>
+
+<p><span style="margin-left:100px;">hello</span> <span>hello</span></p>
+
+<p style="border:1px solid green; padding:5px; padding-top:10px; text-align:center; font-variant: small-caps;">Visit our HTML tutorial</p> 
+
+
+<p style="font-variant: small-caps;">Visit our HTML tutorial</p> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  </body>
+</html>
